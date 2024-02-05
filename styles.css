@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Formula1-Regular-1', sans-serif; 
-    
+    background: black;
 }
 
 .top-bar {
@@ -39,10 +39,15 @@ body {
     text-decoration: none;
     font-size: 16px;
     color: #fff;
-    padding: 5px 15px; /* Adjusted padding for better responsiveness */
-    border-radius: 5px;
+    padding: 20.5px 5px; 
+    border-radius: 0px;
     cursor: pointer;
-    
+    transition: background-color 0.3s ease; 
+    display: inline-block;
+}
+
+.nav-list a:hover {
+    background-color: black; 
 }
 
 @font-face {
