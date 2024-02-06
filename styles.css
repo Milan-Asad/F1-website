@@ -53,28 +53,39 @@ body {
 
 
 .main-article-title {
+    padding-top: 100px;
     font-size: 32px;
     color: #333;
     padding-left: 100px;
-    padding-top: 100px;
     max-width: 650px;
+    text-decoration: none; /* Initially no underline */
 }
 
-.main-article-title {
-    font-size: 32px; 
-    color: #333; 
-    padding-left: 100px;
-    padding-top: 100px; 
-    max-width: 650px; 
+.article-content:hover .main-article-title {
+    text-decoration: underline;
+}
+
+.main-article {
+    width: 650px;
+    height: 450px;
 }
 
 .main-article img {
-    width: 650px;
-    height: 450px;
-    object-fit: cover;
     padding-left: 100px;
     padding-top:-10px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center center;
 }
+
+/* MAIN ARTICLE HOVER EFFECT */
+.main-article:hover img {
+    transform: scale(1.03);
+}
+
+
 
 
 
