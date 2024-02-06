@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Formula1-Regular-1', sans-serif; 
-    background: black;
+    /*background: black;*/
 }
 
 .top-bar {
@@ -17,7 +17,7 @@ body {
 }
 
 .logo {
-    padding-top: 10px; /* Adjusted to move the logo down a bit */
+    padding-top: 10px; 
     padding-right: 10px;
     padding-bottom: 5px;
 }
@@ -50,15 +50,41 @@ body {
     background-color: black; 
 }
 
+
+
+.main-article-title {
+    font-size: 32px;
+    color: #333;
+    padding-left: 100px;
+    padding-top: 100px;
+    max-width: 650px;
+}
+
+.main-article-title {
+    font-size: 32px; 
+    color: #333; 
+    padding-left: 100px;
+    padding-top: 100px; 
+    max-width: 650px; 
+}
+
+.main-article img {
+    width: 650px;
+    height: 450px;
+    object-fit: cover;
+    padding-left: 100px;
+    padding-top:-10px;
+}
+
+
+
+
+
+
+
 @font-face {
     font-family: 'Formula1-Regular-1';
     src: local('Formula1-Regular-1'), url('Fonts/Formula1-Regular-1.ttf') format('truetype');
-}
-
-h1 {
-    font-size: 24px;
-    color: #333;
-    margin: 20px 0;
 }
 
 @media screen and (max-width: 768px) {
