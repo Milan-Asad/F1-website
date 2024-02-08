@@ -68,7 +68,40 @@ body {
 .main-article {
     width: 650px;
     height: 450px;
+    position: relative;
 }
+
+.main-article::before,
+.main-article::after {
+    content: "";
+    position: absolute;
+    border: 10px solid red; /* Adjust border width as needed */
+    background-color: transparent;
+}
+
+.main-article::before {
+    top: 50px;
+    left: 740px;
+    right: 70px; /* Shift the border to the right by 70px */
+    width: 40px; /* Adjust width of the vertical part of the L */
+    height: calc(170% + 20px); /* Adjust height of the vertical part of the L */
+    border-right: none; /* Remove right border */
+    border-bottom: none; /* Remove bottom border */
+    border-top: none; /* Remove top border */
+}
+
+.main-article::after {
+    top: 50px;
+    left: 70px;
+    right: 110px; /* Shift the border to the right by 70px */
+    width: calc(100% + 20px); /* Adjust width of the horizontal part of the L */
+    height: 0px; /* Adjust height of the horizontal part of the L */
+    border-top: none; /* Remove top border */
+    border-left: none; /* Remove left border */
+    border-right: none; /* Remove right border */
+}
+
+
 
 .main-article img {
     padding-left: 100px;
