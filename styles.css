@@ -85,6 +85,54 @@ body {
     transform: scale(1.03);
 }
 
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-top: 130px;
+    max-width: 700px; /* Adjust the maximum width of the card container */
+}
+
+/* Card */
+.card {
+    width: calc(50% - 20px); /* Two cards per row with spacing */
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Card Content */
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Arrange content in a column */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+}
+
+/* Card Title */
+.card-title {
+    font-size: 20px; /* Decrease the font size */
+    margin-bottom: 10px;
+}
+
+/* Card Image */
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Position the card container to the right of the main article */
+.card-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
 
 
@@ -116,4 +164,25 @@ body {
         margin-top: 10px; /* Add margin between logo and navigation on smaller screens */
         display: none; /* Hide the navigation list in half-tabbed mode */
     }
+
+    /* Adjust position and layout of main article and card container */
+    .main-article {
+        position: static; /* Reset position */
+        margin-bottom: 0px; /* Add margin between main article and card container */
+        padding-left: 0px; /* Add left padding to avoid overlapping */
+        
+        width: 80%; /* Full width */
+    }
+
+    .card-container {
+        position: static; /* Reset position */
+        padding: 20px; /* Adjust padding */
+        padding-top: 210px;
+        width: 100%; /* Full width */
+    }
+
+    .card {
+        width: 48%; /* Full width for each card */
+    }
 }
+
