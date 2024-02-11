@@ -66,7 +66,7 @@ body {
 }
 
 .main-article {
-    width: 650px;
+    width: 610px;
     height: 450px;
     position: relative;
 }
@@ -75,32 +75,31 @@ body {
 .main-article::after {
     content: "";
     position: absolute;
-    border: 10px solid red; /* Adjust border width as needed */
+    border: 10px solid red; 
     background-color: transparent;
 }
 
 .main-article::before {
     top: 50px;
     left: 740px;
-    right: 70px; /* Shift the border to the right by 70px */
-    width: 40px; /* Adjust width of the vertical part of the L */
-    height: calc(170% + 20px); /* Adjust height of the vertical part of the L */
-    border-right: none; /* Remove right border */
-    border-bottom: none; /* Remove bottom border */
-    border-top: none; /* Remove top border */
+    right: 70px; 
+    width: 40px; 
+    height: calc(170% + 20px); 
+    border-right: none; 
+    border-bottom: none; 
+    border-top: none; 
 }
 
 .main-article::after {
     top: 50px;
-    left: 70px;
-    right: 110px; /* Shift the border to the right by 70px */
-    width: calc(100% + 20px); /* Adjust width of the horizontal part of the L */
-    height: 0px; /* Adjust height of the horizontal part of the L */
-    border-top: none; /* Remove top border */
-    border-left: none; /* Remove left border */
-    border-right: none; /* Remove right border */
+    left: 98px;
+    right: 110px; 
+    width: calc(97% + 60px); 
+    height: 0px; 
+    border-top: none; 
+    border-left: none; 
+    border-right: none; 
 }
-
 
 
 .main-article img {
@@ -114,59 +113,71 @@ body {
 }
 
 /* MAIN ARTICLE HOVER EFFECT */
+/*
 .main-article:hover img {
     transform: scale(1.03);
 }
+*/
 
-/* Card Container */
+
+/* CARD STUFF */
 .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-right: 60px;
+    padding-right: 90px;
     padding-top: 130px;
-    max-width: 700px; /* Adjust the maximum width of the card container */
+    max-width: 650px; 
 }
 
-/* Card */
 .card {
-    width: calc(50% - 20px); /* Two cards per row with spacing */
+    width: calc(50% - 20px); 
     margin-bottom: 20px;
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
     border-radius: 10px;
     overflow: hidden;
 }
 
-/* Card Content */
+
 .card-content {
     padding: 20px;
     display: flex;
-    flex-direction: column; /* Arrange content in a column */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    text-align: center; /* Center text */
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    
 }
 
-/* Card Title */
+
 .card-title {
-    font-size: 20px; /* Decrease the font size */
-    margin-bottom: 10px;
+    font-size: 15px; /* Decrease the font size */
+    margin-bottom: 20px;
+    padding-top: 0px;
+    text-align: left;
 }
 
-/* Card Image */
 .card img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-/* Position the card container to the right of the main article */
+
 .card-container {
     position: absolute;
     top: 0;
     right: 0;
 }
 
+
+.card-topic {
+    color: red; 
+    font-size: 12px;
+    margin-bottom: 5px; 
+    text-align: left; 
+    padding-right: 225px;
+}
 
 
 
@@ -180,42 +191,58 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    /* TOP STUFF */
     .top-bar {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: center; /* Center items horizontally on smaller screens */
+        flex-direction: column; 
+        align-items: center; 
         padding-top: 5px;
     }
 
     .logo {
-        order: -1; /* Move the logo to the top in the column layout */
-        margin-bottom: 10px; /* Add margin between logo and text on smaller screens */
+        order: -1; 
+        margin-bottom: 10px; 
         padding-top: 50px;
     }
 
     .nav-list {
-        justify-content: center; /* Center list items horizontally on smaller screens */
-        margin-top: 10px; /* Add margin between logo and navigation on smaller screens */
-        display: none; /* Hide the navigation list in half-tabbed mode */
+        justify-content: center; 
+        margin-top: 10px; 
+        display: none; 
     }
 
-    /* Adjust position and layout of main article and card container */
-    .main-article {
-        position: static; /* Reset position */
-        margin-bottom: 0px; /* Add margin between main article and card container */
-        padding-left: 0px; /* Add left padding to avoid overlapping */
-        
-        width: 80%; /* Full width */
-    }
-
+    /* CARD STUFF */
     .card-container {
-        position: static; /* Reset position */
-        padding: 20px; /* Adjust padding */
+        position: static; 
+        padding: 49px; 
         padding-top: 210px;
-        width: 100%; /* Full width */
+        width: 100%; 
     }
 
     .card {
-        width: 48%; /* Full width for each card */
+        width: 48%; 
     }
-}
 
+    /* MAIN ARTICLE STUFF */
+    .main-article {
+        position: static; 
+        margin-bottom: 0px; 
+        padding: 0px; 
+        width: 70%; 
+    }
+    
+    .main-article::before {
+        top: 16.45vw;
+        left: 88vw; 
+        right: 5vw; 
+        width: 5vw;
+        height: 69.5vw; 
+    } 
+    
+    .main-article::after {
+        left: 12.5vw; 
+        right: 25vw; 
+        width: 76vw; 
+        height: 10vw;
+    }
+    
+}
