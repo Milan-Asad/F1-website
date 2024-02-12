@@ -5,19 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F1 - The official website</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="home.js" defer></script> <!-- Assuming home.js is in the same directory as your HTML file -->
+
 </head>
 <body>
 
     <body>
         <!-- TOP BAR -->
-        <div class="top-bar">
-            <img src="Images/F1logo.png" alt="F1 Logo" width="120" height="25" style="padding-top: 10px; padding-left: 35px; padding-bottom: 5px;">
-            <ul class="nav-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="HTML-CSS/drivers.html">Drivers</a></li> <!-- Link to drivers.html -->
-                <li><a href="HTML-CSS/teams.html">Teams</a></li>
-            </ul>
-        </div>
+<div class="top-bar">
+    <img src="Images/F1logo.png" alt="F1 Logo" width="120" height="25" style="padding-top: 10px; padding-left: 45px; padding-bottom: 5px;">
+    <ul class="nav-list">
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Home</a>
+            <div class="dropdown-content">
+                <a href="#">Submenu Item 1</a>
+                <a href="#">Submenu Item 2</a>
+                <a href="#">Submenu Item 3</a>
+            </div>
+        </li>
+        <li><a href="HTML-CSS/drivers.html">Drivers</a></li>
+        <li><a href="HTML-CSS/teams.html">Teams</a></li>
+    </ul>
+</div>
+
     
         <!-- CONTENTS -->
         <div class="main-article">
