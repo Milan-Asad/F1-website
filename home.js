@@ -1,4 +1,4 @@
-// Optional JavaScript for toggling the dropdown on hover and changing background color
+// HOVER EFFECT ON HOME 
 document.addEventListener("DOMContentLoaded", function() {
     // Get all dropdown buttons
     var dropdowns = document.getElementsByClassName("dropdown");
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// Set the target date and time
+// COUNTDOWN (TILL NEXT RACE)
 const targetDate = new Date("2024-02-29T11:30:00").getTime();
 
 // Update the countdown every second
@@ -48,15 +48,23 @@ const countdownTimer = setInterval(function() {
     }
 }, 1000); // Update every second
 
-
+// COUNTDOWN "DELAY"
 document.addEventListener("DOMContentLoaded", function() {
     // Get the countdown element
     const countdownElement = document.getElementById("countdown");
 
-    // Add the "show" class after a delay (e.g., 1 second)
     setTimeout(function() {
         countdownElement.classList.add("show");
-    }, 3000); // Delay in milliseconds (adjust as needed)
+    }, 3000); 
+});
+
+// COUNTDOWN ONCLICK
+document.addEventListener("DOMContentLoaded", function() {
+    const countdownContainer = document.getElementById("countdownContainer");
+
+    countdownContainer.addEventListener("click", function() {
+        window.location.href = "HTML-CSS/countdown.html";
+    });
 });
 
 

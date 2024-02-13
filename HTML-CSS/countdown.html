@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown to race</title>
+    <link rel="stylesheet" href="countdown.css">
+
+    <script src="/JS/countdown.js" defer></script>
+
+</head>
+<body>
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <img src="../Images/F1logo.png" alt="F1 Logo" width="120" height="25" style="padding-top: 10px; padding-left: 45px; padding-bottom: 5px;">
+        <ul class="nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../HTML-CSS/drivers.html">Drivers</a></li> <!-- Link to drivers.html -->
+            <li><a href="teams.html">Teams</a></li>
+        </ul>
+    </div>
+
+    <!-- Countdown container -->
+    <div class="countdown-container">
+        <svg class="countdown-svg" width="300" height="300" viewBox="0 0 300 300">
+            <!-- Arc for days -->
+            <path class="arc-days" fill="none" stroke="#ff0000" stroke-width="10" d="" />
+
+            <!-- Arc for hours -->
+            <path class="arc-hours" fill="none" stroke="#00ff00" stroke-width="10" d="" />
+
+            <!-- Arc for minutes -->
+            <path class="arc-minutes" fill="none" stroke="#0000ff" stroke-width="10" d="" />
+
+            <!-- Arc for seconds -->
+            <path class="arc-seconds" fill="none" stroke="#ffff00" stroke-width="10" d="" />
+        </svg>
+    </div>
+
+    <!-- Countdown elements -->
+    <div class="countdown-elements">
+        <div class="countdown-item">
+            <h2>Days</h2>
+            <p id="countdown-days">0</p>
+        </div>
+        <div class="countdown-item">
+            <h2>Hours</h2>
+            <p id="countdown-hours">0</p>
+        </div>
+        <div class="countdown-item">
+            <h2>Minutes</h2>
+            <p id="countdown-minutes">0</p>
+        </div>
+        <div class="countdown-item">
+            <h2>Seconds</h2>
+            <p id="countdown-seconds">0</p>
+        </div>
+    </div>
+
+    <script src="countdown.js" defer></script> <!-- Assuming countdown.js is in the same directory -->
+</body>
+</html>
