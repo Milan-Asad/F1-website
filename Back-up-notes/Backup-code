@@ -1,0 +1,125 @@
+/* 
+@media screen and (max-width: 768px) {
+
+    .top-bar {
+        flex-direction: column; 
+        align-items: center; 
+        padding-top: 5px;
+    }
+
+    .logo {
+        order: -1; 
+        margin-bottom: 10px; 
+        padding-top: 50px;
+    }
+
+    .nav-list {
+        justify-content: center; 
+        margin-top: 10px; 
+        display: none; 
+    }
+
+    
+    .card-container {
+        position: static; 
+        padding: 49px; 
+        padding-top: 210px;
+        width: 100%; 
+    }
+
+    .card {
+        width: 48%; 
+    }
+
+    
+    .main-article {
+        position: static; 
+        margin-bottom: 0px; 
+        padding: 0px; 
+        width: 70%; 
+    }
+    
+    .main-article::before {
+        top: 16.45vw;
+        left: 88vw; 
+        right: 5vw; 
+        width: 5vw;
+        height: 69.5vw; 
+    } 
+    
+    .main-article::after {
+        left: 12.5vw; 
+        right: 25vw; 
+        width: 76vw; 
+        height: 10vw;
+    }
+
+    .countdown {
+        display: none;
+    }
+    
+} */
+
+
+/* 
+@media screen and (max-width: 1124px) {
+    .top-bar {
+        flex-direction: column; 
+        align-items: center; 
+        padding-top: 5px;
+    }
+    
+    .logo {
+        order: -1; 
+        margin-bottom: 10px; 
+        padding-top: 50px;
+    }
+    
+    .nav-list {
+        justify-content: center; 
+        margin-top: 10px; 
+        display: none; 
+    }
+    
+    .card-container {
+        position: static; 
+        padding: 240px; 
+        padding-top: 300px;
+        width: 100%; 
+    }
+    
+    .card {
+        width: 48%; 
+    }
+    
+    .main-article {
+        position: static; 
+        margin-bottom: 0px; 
+        padding: 0px; 
+        width: 80%; 
+    }
+    
+    .main-article-title {
+        padding-top: 100px;
+        font-size: 32px;
+        color: #333;
+        padding-left: 100px;
+        max-width: 1000px;
+        text-decoration: none; 
+    }
+    
+    .main-article::before {
+       display: none;
+    } 
+    
+    .main-article::after {
+        display: none;
+    }
+    
+    .countdown {
+        display: none;
+    }
+    
+    
+    }
+     */

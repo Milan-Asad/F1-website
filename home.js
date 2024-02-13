@@ -15,17 +15,87 @@ document.addEventListener("DOMContentLoaded", function() {
             this.classList.remove("active");
             var dropdownContent = this.querySelector(".dropdown-content");
             dropdownContent.style.display = "none";
-            document.body.classList.remove("black-background"); // Remove black background class
         });
     }
+});
+
+
+// Set the target date and time
+const targetDate = new Date("2024-02-29T11:30:00").getTime();
+
+// Update the countdown every second
+const countdownTimer = setInterval(function() {
+    // Get the current date and time
+    const currentDate = new Date().getTime();
+    
+    // Calculate the remaining time in milliseconds
+    const remainingTime = targetDate - currentDate;
+    
+    // Calculate the remaining days, hours, minutes, and seconds
+    const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+    
+    // Update the countdown element with the remaining time
+    const countdownElement = document.getElementById("countdown");
+    countdownElement.textContent = `${days} : ${hours} : ${minutes} : ${seconds}`;
+
+    // If the countdown is over, clear the interval
+    if (remainingTime <= 0) {
+        clearInterval(countdownTimer);
+        countdownElement.textContent = "Countdown expired";
+    }
+}, 1000); // Update every second
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the countdown element
+    const countdownElement = document.getElementById("countdown");
+
+    // Add the "show" class after a delay (e.g., 1 second)
+    setTimeout(function() {
+        countdownElement.classList.add("show");
+    }, 3000); // Delay in milliseconds (adjust as needed)
 });
 
 
 
 
 
-
 /*
+
+// Set the target date and time
+const targetDate = new Date("2024-02-29T11:30:00").getTime();
+
+// Update the countdown every second
+const countdownTimer = setInterval(function() {
+    // Get the current date and time
+    const currentDate = new Date().getTime();
+    
+    // Calculate the remaining time in milliseconds
+    const remainingTime = targetDate - currentDate;
+    
+    // Calculate the remaining days, hours, minutes, and seconds
+    const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+    
+    // Update the countdown element with the remaining time
+    const countdownElement = document.getElementById("countdown");
+    countdownElement.textContent = `${days} : ${hours} : ${minutes} : ${seconds}`;
+
+    // If the countdown is over, clear the interval
+    if (remainingTime <= 0) {
+        clearInterval(countdownTimer);
+        countdownElement.textContent = "Countdown expired";
+    }
+}, 1000); // Update every second
+
+
+
+
 // Optional JavaScript for toggling the dropdown on click and changing background color
 document.addEventListener("DOMContentLoaded", function() {
     // Get all dropdown buttons
