@@ -88,15 +88,19 @@ function updateMinutesArc(percentage) {
 }
 
 // Function to update the arc path for hours only
+// Function to update the arc path for hours only
 function updateHoursArc(percentage) {
     const svgWidth = 10; // Width of the SVG element
-    const svgHeight = 110; // Height of the SVG element // 10, 110, 120
+    const svgHeight = 110; // Height of the SVG element
     const radius = 120; // Radius of the arc
     const centerX = (svgWidth / 0.75) + 140; // X-coordinate of the center
     const centerY = svgHeight / 0.75; // Y-coordinate of the center
 
-    const startAngle = (-Math.PI / 5) - (Math.PI / 3.28); // Start angle of the arc
-    const endAngle = startAngle + percentage * (3 * Math.PI); // End angle of the arc
+    // Calculate the start angle of the arc (same for all hours)
+    const startAngle = (-Math.PI / 5) - (Math.PI / 3.28);
+
+    // Calculate the end angle of the arc based on the percentage
+    const endAngle = startAngle + percentage * (2 * Math.PI);
 
     // Calculate the start and end points of the arc
     const startX = centerX + radius * Math.cos(startAngle);
@@ -104,9 +108,12 @@ function updateHoursArc(percentage) {
     const endX = centerX + radius * Math.cos(endAngle);
     const endY = centerY + radius * Math.sin(endAngle);
 
+    // Determine large or small arc based on percentage
+    const largeArcFlag = percentage > 0.5 ? 1 : 0;
+    // Determine clockwise or counterclockwise arc based on percentage
+    const sweepFlag = percentage > 0 ? 1 : 0;
+
     // Construct the SVG path command
-    const largeArcFlag = percentage > 0.5 ? 1 : 0; // Determine large or small arc
-    const sweepFlag = percentage > 0 ? 1 : 0; // Determine clockwise or counterclockwise arc
     const arcPath = `M ${startX},${startY} A ${radius},${radius} 0 ${largeArcFlag},${sweepFlag} ${endX},${endY}`;
 
     // Update the arc path for hours
