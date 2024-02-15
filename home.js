@@ -68,6 +68,10 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+function redirectToArticle(articleURL) {
+    window.location.href = articleURL;
+}
+
 
 
 
