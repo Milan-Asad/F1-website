@@ -118,22 +118,25 @@ body {
 
 
 .main-article-title {
-    padding-top: 100px;
     font-size: 32px;
     color: #333;
-    padding-left: 100px;
     max-width: 650px;
     text-decoration: none; /* Initially no underline */
+    padding-left: 100px;
+    padding-top: 100px;
 }
 
 .article-content:hover .main-article-title {
     text-decoration: underline;
 }
 
+
+
 .main-article {
     width: 610px;
     height: 450px;
     position: relative;
+    
 }
 
 .main-article::before,

@@ -1,7 +1,13 @@
+// countdown js
+
 // Set the target date and time (ensure it's in the future)
 const targetDate = new Date("2024-02-29T11:30:00").getTime();
 
-// Update the countdown every second
+// const targetDate = new Date("2024-02-29T11:30:00").getTime();
+// const targetDate = new Date("2025-02-12T12:30:00").getTime(); TEST
+
+
+// UPDATE COUNTDOWN EVERY SECOND
 const countdownTimer = setInterval(function() {
     // Get the current date and time
     const currentDate = new Date().getTime();
@@ -84,13 +90,13 @@ function updateMinutesArc(percentage) {
 // Function to update the arc path for hours only
 function updateHoursArc(percentage) {
     const svgWidth = 10; // Width of the SVG element
-    const svgHeight = 110; // Height of the SVG element
+    const svgHeight = 110; // Height of the SVG element // 10, 110, 120
     const radius = 120; // Radius of the arc
     const centerX = (svgWidth / 0.75) + 140; // X-coordinate of the center
     const centerY = svgHeight / 0.75; // Y-coordinate of the center
 
     const startAngle = (-Math.PI / 5) - (Math.PI / 3.28); // Start angle of the arc
-    const endAngle = startAngle + percentage * (2 * Math.PI); // End angle of the arc
+    const endAngle = startAngle + percentage * (3 * Math.PI); // End angle of the arc
 
     // Calculate the start and end points of the arc
     const startX = centerX + radius * Math.cos(startAngle);
@@ -167,3 +173,4 @@ setInterval(function() {
     const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
     updateSecondsArc(seconds / 60);
 }, 1000); // Update every second
+
