@@ -89,8 +89,11 @@ body {
 .article-1-text {
     padding-left: 100px;
     width: 850px;
-    font-size: small;
+    font-size: 13px;
+    text-align: justify;
 }
+
+
 
 
 @font-face {
@@ -99,4 +102,3 @@ body {
 }
 
 
-}

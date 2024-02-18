@@ -300,6 +300,12 @@ body {
         display: none; 
     }
 
+    .main-article-title {
+        width: 600px;
+        text-align: left;
+        font-size: 30px;
+    }
+
     .card-container {
         position: static; 
         padding: 49px; 
@@ -311,7 +317,16 @@ body {
         width: 48%; 
     }
 
-    .main-article {
+    .main-article::before {
+        display: none;
+     } 
+     
+     .main-article::after {
+         display: none;
+     }
+
+
+    /* .main-article {
         position: static; 
         margin-bottom: 0px; 
         padding: 0px; 
@@ -324,7 +339,7 @@ body {
         right: 5vw; 
         width: 5vw;
         height: 69.5vw; 
-    } 
+    }  */
     
     .main-article::after {
         left: 12.5vw; 

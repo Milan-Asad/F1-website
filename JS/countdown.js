@@ -181,3 +181,39 @@ setInterval(function() {
     updateSecondsArc(seconds / 60);
 }, 1000); // Update every second
 
+
+// Function to handle hover over days arc
+document.querySelector(".arc-days").addEventListener("mouseover", function() {
+    document.getElementById("countdown-days").style.color = "red";
+});
+
+document.querySelector(".arc-days").addEventListener("mouseout", function() {
+    document.getElementById("countdown-days").style.color = ""; // Reset to default color
+});
+
+// Function to handle hover over hours arc
+document.querySelector(".arc-hours").addEventListener("mouseover", function() {
+    document.getElementById("countdown-hours").style.color = "green";
+});
+
+document.querySelector(".arc-hours").addEventListener("mouseout", function() {
+    document.getElementById("countdown-hours").style.color = ""; // Reset to default color
+});
+
+// Function to handle hover over minutes arc
+document.querySelector(".arc-minutes").addEventListener("mouseover", function() {
+    document.getElementById("countdown-minutes").style.color = "blue";
+});
+
+document.querySelector(".arc-minutes").addEventListener("mouseout", function() {
+    document.getElementById("countdown-minutes").style.color = ""; // Reset to default color
+});
+
+// Function to handle hover over seconds arc
+document.querySelector(".arc-seconds").addEventListener("mouseover", function() {
+    document.getElementById("countdown-seconds").style.color = "yellow";
+});
+
+document.querySelector(".arc-seconds").addEventListener("mouseout", function() {
+    document.getElementById("countdown-seconds").style.color = ""; // Reset to default color
+});
