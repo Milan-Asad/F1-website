@@ -1,23 +1,23 @@
 // HOVER EFFECT ON HOME 
-document.addEventListener("DOMContentLoaded", function() {
-    // Get all dropdown buttons
-    var dropdowns = document.getElementsByClassName("dropdown");
+// document.addEventListener("DOMContentLoaded", function() {
+//     // Get all dropdown buttons
+//     var dropdowns = document.getElementsByClassName("dropdown");
     
-    // Add event listener to each dropdown button
-    for (var i = 0; i < dropdowns.length; i++) {
-        dropdowns[i].addEventListener("mouseenter", function() {
-            this.classList.add("active");
-            var dropdownContent = this.querySelector(".dropdown-content");
-            dropdownContent.style.display = "block";
-        });
+//     // Add event listener to each dropdown button
+//     for (var i = 0; i < dropdowns.length; i++) {
+//         dropdowns[i].addEventListener("mouseenter", function() {
+//             this.classList.add("active");
+//             var dropdownContent = this.querySelector(".dropdown-content");
+//             dropdownContent.style.display = "block";
+//         });
 
-        dropdowns[i].addEventListener("mouseleave", function() {
-            this.classList.remove("active");
-            var dropdownContent = this.querySelector(".dropdown-content");
-            dropdownContent.style.display = "none";
-        });
-    }
-});
+//         dropdowns[i].addEventListener("mouseleave", function() {
+//             this.classList.remove("active");
+//             var dropdownContent = this.querySelector(".dropdown-content");
+//             dropdownContent.style.display = "none";
+//         });
+//     }
+// });
 
 
 // COUNTDOWN (TILL NEXT RACE)
@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function redirectToArticle(articleURL) {
     window.location.href = articleURL;
 }
+
 
 
 

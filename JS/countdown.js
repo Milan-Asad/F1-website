@@ -88,7 +88,6 @@ function updateMinutesArc(percentage) {
 }
 
 // Function to update the arc path for hours only
-// Function to update the arc path for hours only
 function updateHoursArc(percentage) {
     const svgWidth = 10; // Width of the SVG element
     const svgHeight = 110; // Height of the SVG element
@@ -96,11 +95,8 @@ function updateHoursArc(percentage) {
     const centerX = (svgWidth / 0.75) + 140; // X-coordinate of the center
     const centerY = svgHeight / 0.75; // Y-coordinate of the center
 
-    // Calculate the start angle of the arc (same for all hours)
-    const startAngle = (-Math.PI / 5) - (Math.PI / 3.28);
-
-    // Calculate the end angle of the arc based on the percentage
-    const endAngle = startAngle + percentage * (2 * Math.PI);
+    const startAngle = (-Math.PI / 5) - (Math.PI / 3.28); // Start angle of the arc
+    const endAngle = startAngle + percentage * (2 * Math.PI); // End angle of the arc
 
     // Calculate the start and end points of the arc
     const startX = centerX + radius * Math.cos(startAngle);
@@ -108,17 +104,19 @@ function updateHoursArc(percentage) {
     const endX = centerX + radius * Math.cos(endAngle);
     const endY = centerY + radius * Math.sin(endAngle);
 
-    // Determine large or small arc based on percentage
-    const largeArcFlag = percentage > 0.5 ? 1 : 0;
-    // Determine clockwise or counterclockwise arc based on percentage
-    const sweepFlag = percentage > 0 ? 1 : 0;
-
     // Construct the SVG path command
+    const largeArcFlag = percentage > 0.5 ? 1 : 0; // Determine large or small arc
+    const sweepFlag = percentage > 0 ? 1 : 0; // Determine clockwise or counterclockwise arc
     const arcPath = `M ${startX},${startY} A ${radius},${radius} 0 ${largeArcFlag},${sweepFlag} ${endX},${endY}`;
 
     // Update the arc path for hours
     document.querySelector(".arc-hours").setAttribute("d", arcPath);
 }
+
+
+
+
+
 
 // Function to update the arc path for days only
 function updateDaysArc(percentage) {
@@ -156,12 +154,14 @@ setInterval(function() {
 
 
 // Update the hours arc every second
+// Update the arc for hours inside the interval function
 setInterval(function() {
     const currentDate = new Date().getTime();
     const remainingTime = targetDate - currentDate;
     const hours = Math.floor(remainingTime / (1000 * 60 * 60));
-    updateHoursArc(hours / 24);
+    updateHoursArc(hours / 24); // Pass percentage of hours remaining
 }, 1000); // Update every second
+
 
 
 // Update the minutes arc every second
