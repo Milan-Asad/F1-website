@@ -4,4 +4,4 @@ Created a clone F1 website using:
 
 - HTML
 - CSS
-- JAVASCRIPT
+- JavaScript
