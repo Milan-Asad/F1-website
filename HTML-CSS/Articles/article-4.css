@@ -13,8 +13,8 @@ body {
 }
 
 #wrapper-bar {
-    max-width: 1519px; /* Set maximum width */
-    margin: 0 auto; /* Center the content horizontally */
+    max-width: 1519px; 
+    margin: 0 auto; 
     display: flex;
     align-items: center; 
     padding-left:423px
@@ -90,8 +90,8 @@ body {
 
 
 #article-4-image img {
-    width: 80%; /* Set the width to 60% of its original size */
-    height: 95%; /* Set the height to 60% of its original size */
+    width: 80%; 
+    height: 95%; 
     object-fit: contain; /* Maintain aspect ratio and fit inside the container */
 }
 
@@ -109,8 +109,7 @@ body {
 }
 
 
-
-
+/* FONT */
 @font-face {
     font-family: 'Formula1-Regular-1';
     src: url('/Fonts/Formula1-Regular-1.ttf') format('truetype'); 

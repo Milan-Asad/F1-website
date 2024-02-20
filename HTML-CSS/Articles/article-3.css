@@ -14,7 +14,7 @@ body {
 
 #wrapper-bar {
     max-width: 1519px; /* Set maximum width */
-    margin: 0 auto; /* Center the content horizontally */
+    margin: 0 auto; 
     display: flex;
     align-items: center; 
     padding-left:423px
@@ -30,7 +30,7 @@ body {
     padding-bottom: 5px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Align items horizontally with space between them */
+    justify-content: space-between; 
 }
 
 .logo {
@@ -111,10 +111,8 @@ body {
 
 
 
-
+/* FONT */
 @font-face {
     font-family: 'Formula1-Regular-1';
     src: url('/Fonts/Formula1-Regular-1.ttf') format('truetype'); 
 }
-
-
