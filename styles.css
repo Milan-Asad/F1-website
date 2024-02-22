@@ -144,6 +144,7 @@ body {
     background-color: transparent;
 }
 
+/* MIDDLE LINE */
 .main-article::before {
     top: 50px;
     left: 740px;
@@ -155,6 +156,7 @@ body {
     border-top: none; 
 }
 
+/* TOP LEFT BAR */
 .main-article::after {
     top: 50px;
     left: 98px;
@@ -164,6 +166,15 @@ body {
     border-top: none; 
     border-left: none; 
     border-right: none; 
+}
+
+/* BOTTOM RIGHT BORDER */
+.article-border {
+    margin-top: 375px;
+    margin-left: 740px;
+    width: 690px;
+    height: 11px;
+    background-color: red;
 }
 
 
@@ -408,6 +419,10 @@ body {
     .main-article::after {
         display: none;
     }
+
+    .article-border {
+        display: none
+    }
     
     .countdown {
         display: none;
@@ -426,4 +441,20 @@ body {
 
 
 
- 
+  .footer {
+    /* Stick to the bottom of the content area */
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding-top: 20px; 
+    position: relative;
+    clear: both; 
+    height: 200px;
+    margin-top: 2500px;
+}
+
+
+.footer-text {
+    margin: 0;
+}
