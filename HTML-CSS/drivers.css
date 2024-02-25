@@ -5,6 +5,14 @@ body {
     /*background: black;*/
 }
 
+#wrapper-bar {
+    max-width: 1519px; /* Set maximum width */
+    margin: 0 auto; /* Center the content horizontally */
+    display: flex;
+    align-items: center; 
+    padding-left: 423px
+}
+
 .top-bar {
     height: 50px;
     background-color: red;

@@ -35,7 +35,7 @@ body {
     align-items: center; 
 }
 
-#wrapper-card-2 {
+#wrapper-card {
     max-width: 1519px; /* Set maximum width */
     margin: 0 auto; /* Center the content horizontally */
     display: flex;
@@ -44,17 +44,37 @@ body {
 
 
 
+#countdownContainer {
+    position: fixed; /* Set the position to fixed */
+    top: 0; /* Stick it to the very top of the screen */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Take up the full width of the screen */
+    height: 30px;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-align: center;
+    padding-top: 0px;
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
 .top-bar {
+    position: fixed; /* Set the position to fixed */
+    top: 30px; /* Stick it below the countdown */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Take up the full width of the screen */
     height: 50px;
     background-color: red;
-    width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-family: 'Formula1-Regular-1', sans-serif; 
+    font-family: 'Formula1-Regular-1', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between; /* Align items horizontally with space between them */
+    z-index: 1000; /* Ensure it stays on top of other content */
+
 }
+
 
 .logo {
     padding-top: 10px; 
@@ -111,6 +131,7 @@ body {
 
 .countdown:hover {
     text-decoration: underline; /* Underline on hover */
+    cursor: pointer;
 }
 
 
@@ -121,6 +142,7 @@ body {
     text-decoration: none; /* Initially no underline */
     padding-left: 100px;
     padding-top: 100px;
+    margin-top: 100px;
 }
 
 .article-content:hover .main-article-title {
@@ -195,8 +217,7 @@ body {
 }
 */
 
-
-/* CARD STUFF */
+/* 
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -206,6 +227,19 @@ body {
     max-width: 650px; 
     
 }
+ */
+
+/* CARD STUFF */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 90px;
+    padding-top: 155px;
+    max-width: 650px; 
+
+}
+
 
 .card-container {
     position: absolute;
@@ -214,7 +248,7 @@ body {
 }
 
 .card {
-    width: calc(50% - 20px); 
+    width: calc(50% - 10px); 
     margin-bottom: 20px;
     background-color: #ffffff;
     /* background-color: #f4f4f4; */
@@ -253,7 +287,7 @@ body {
 
 .card a {
     color: black;
-    text-decoration: none; /* Optional: Remove underline */
+    text-decoration: none; 
 }
 
 .card img {
@@ -285,11 +319,34 @@ body {
 
 
 
+.technical-box {
+    margin-top: 300px;
+    padding-top: 30px;
+    background-color: rgb(31, 28, 28);
+    height: 700px;
+}
+
+.technical-text {
+    font-family: 'Formula1-Regular-1-Bold', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 100px; 
+    font-size: 40px;
+    margin: 0;
+    padding-right: 1100px;
+    margin-bottom: 400px;
+}
+
 
 
 @font-face {
     font-family: 'Formula1-Regular-1';
     src: local('Formula1-Regular-1'), url('Fonts/Formula1-Regular-1.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Formula1-Regular-1-Bold';
+    src: local('Formula1-Regular-1-Bold'), url('Fonts/Formula1-Bold-4.ttf') format('truetype');
 }
 
 /* Styles for screens up to 768px wide */
@@ -337,6 +394,9 @@ body {
          display: none;
      }
 
+     .article-border {
+        display: none
+    }
 
     /* .main-article {
         position: static; 
@@ -453,6 +513,148 @@ body {
     height: 200px;
     margin-top: 2500px;
 }
+
+/* Styles for screens up to 576px wide (mobile screens) */
+@media screen and (max-width: 465px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        width: 182.1%;
+    }
+
+    .logo {
+        order: -1;
+        margin-bottom: 10px;
+        padding-top: 50px;
+    }
+
+    .nav-list {
+        justify-content: center;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column; /* Display navigation links vertically */
+        padding: 0;
+    }
+
+    .nav-list li {
+        margin-right: 0; /* Remove margin between navigation links */
+        margin-bottom: 10px; /* Add some spacing between navigation links */
+    }
+
+    .main-article-title {
+        text-align: center; 
+        padding-left: 70px; 
+        width: 250px;
+        font-size: 12px;
+    }
+
+    .main-article {
+        
+        width: 350px;
+        height: 250px;
+        
+    }
+
+    .article-border,
+    .main-article::before,
+    .main-article::after {
+        display: none; /* Hide unnecessary elements */
+    }
+
+    .countdown {
+        width: 200px;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 0px;
+        padding-left: 20px;
+        padding-top: 460px; /* Adjust this value as needed */
+        max-width: 1950px; 
+        margin: 40px 10px;/* Adjust margin here */
+    }
+    
+    
+    .card-container {
+        /* position: absolute; */
+        top: 0;
+        right: 0;
+    }
+    
+    .card {
+        width: calc(50% - 10px); 
+        /* margin-bottom: 20px; */
+        background-color: #ffffff;
+        /* background-color: #f4f4f4; */
+        border-radius: 10px;
+        overflow: hidden;
+        border: 2px solid red; 
+    }
+    
+    
+    .card-content {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+        
+    }
+    
+    .card-topic {
+        color: red; 
+        font-size: 8px;
+        margin-bottom: 5px; 
+        text-align: left; 
+        padding-right: 120px;
+    }
+    
+    
+    .card-title {
+        font-size: 10px;
+        margin-bottom: 20px;
+        padding-top: 0px;
+        text-align: left;
+    }
+    
+    
+    .card a {
+        color: black;
+        text-decoration: none; /* Optional: Remove underline */
+    }
+    
+    .card img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    
+    
+    /* CARD HOVER STUFF (ZOOM, BLACK, UNDERLINE) */
+    .card:hover img {
+        transform: scale(1.05);
+    }
+    
+    .card:hover {
+        background-color: black;
+    }
+    
+    .card:hover .card-title {
+        color: white;
+    }
+    
+    
+    .card:hover .card-title {
+        text-decoration: underline;
+    }
+    
+}
+
+
 
 
 .footer-text {
