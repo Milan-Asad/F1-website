@@ -42,6 +42,11 @@ body {
     align-items: center; 
 }
 
+.wrapper-technical {
+    max-width: 1519px; 
+    margin: 0 auto;
+    align-items: center; 
+}
 
 
 #countdownContainer {
@@ -172,7 +177,7 @@ body {
     left: 740px;
     right: 70px; 
     width: 40px; 
-    height: calc(170% + 20px); 
+    height: calc(170% + 0px); 
     border-right: none; 
     border-bottom: none; 
     border-top: none; 
@@ -192,7 +197,7 @@ body {
 
 /* BOTTOM RIGHT BORDER */
 .article-border {
-    margin-top: 375px;
+    margin-top: 360px;  /* 375 original */
     margin-left: 740px;
     width: 690px;
     height: 11px;
@@ -237,7 +242,7 @@ body {
     padding-right: 90px;
     padding-top: 155px;
     max-width: 650px; 
-
+    
 }
 
 
@@ -251,10 +256,10 @@ body {
     width: calc(50% - 10px); 
     margin-bottom: 20px;
     background-color: #ffffff;
-    /* background-color: #f4f4f4; */
     border-radius: 10px;
     overflow: hidden;
     border: 2px solid red; 
+    
 }
 
 
@@ -266,6 +271,7 @@ body {
     align-items: center; 
     text-align: center;
     
+
 }
 
 .card-topic {
@@ -273,20 +279,25 @@ body {
     font-size: 12px;
     margin-bottom: 5px; 
     text-align: left; 
-    padding-right: 225px;
+    padding-right: 235px;
+    padding-top: 10px;
 }
 
 
 .card-title {
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 20px;
     padding-top: 0px;
     text-align: left;
+    padding-left: 20px; 
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
 }
 
 
 .card a {
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none; 
 }
 
@@ -318,7 +329,7 @@ body {
 }
 
 
-
+/* TECHNICAL SECTION */
 .technical-box {
     margin-top: 300px;
     padding-top: 30px;
@@ -338,16 +349,148 @@ body {
 }
 
 
-
-@font-face {
-    font-family: 'Formula1-Regular-1';
-    src: local('Formula1-Regular-1'), url('Fonts/Formula1-Regular-1.ttf') format('truetype');
+/* .technical-main-card {
+    padding-left: 105px;
+    margin: -400px 0 0 0;
+    width: 750px;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0s ease; 
 }
 
-@font-face {
-    font-family: 'Formula1-Regular-1-Bold';
-    src: local('Formula1-Regular-1-Bold'), url('Fonts/Formula1-Bold-4.ttf') format('truetype');
+.technical-main-card:hover {
+    box-shadow: 0px 4px 9px rgba(255, 0, 0, 1); 
+} */
+
+
+.technical-main-card {
+    padding-left: 105px;
+    margin: -400px 50px 0px 00px;
+    width: 750px;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1); /* Initial shadow color */
+    transition: box-shadow 0.1s ease; /* Add transition effect */
 }
+
+.technical-main-card:hover {
+    box-shadow: 2px 2px 0px 0.00005px rgba(255, 0, 0, 1); 
+}
+
+
+
+
+
+
+.card-image {
+    width: 100%;
+    height: 70%;
+    overflow: hidden; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+
+.technical-main-card img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+.technical-main-card:hover img {
+    transform: scale(1.07); 
+}
+
+.card-content {
+    padding: 0px;
+    text-align: left;
+}
+
+.technical-card-topic {
+    color: red;
+    padding-top: 10px;
+    padding-right: 660px;
+    text-align: left;
+}
+
+.technical-card-title {
+    color: white;
+    text-decoration: none; 
+    transition: text-decoration 0.3s ease; 
+}
+
+.technical-main-card:hover .technical-card-title {
+    text-decoration: underline; 
+}
+
+
+
+
+/* SUB ARTICLE */
+.technical-sub-article {
+    margin-top: -550px;
+    margin-left: 900px;
+    padding-left: 20px;
+    width: 550px;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.1s ease;
+}
+
+.technical-sub-article:hover {
+    box-shadow: 2px 2px 0px 0.00005px rgba(255, 0, 0, 1);
+}
+
+.technical-sub-article img {
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.technical-sub-article:hover img {
+    transform: scale(1.07);
+}
+
+.technical-sub-article .card-content {
+    padding: 0px;
+    text-align: left;
+}
+
+.technical-sub-article .technical-sub-card-topic {
+    color: red;
+    padding-top: 0px;
+    padding-right: 660px;
+    text-align: left;
+}
+
+.technical-sub-card-topic {
+    padding-left: 200px;
+}
+
+.technical-sub-article .technical-card-title {
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.technical-sub-article:hover .technical-card-title {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* MEDIA SCREEN STUFF */
 
 /* Styles for screens up to 768px wide */
 @media screen and (max-width: 768px) {
@@ -380,6 +523,7 @@ body {
         padding: 49px; 
         padding-top: 210px;
         width: 100%; 
+        
     }
 
     .card {
@@ -497,22 +641,6 @@ body {
     }
   }
 
-
-
-
-
-  .footer {
-    /* Stick to the bottom of the content area */
-    width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
-    padding-top: 20px; 
-    position: relative;
-    clear: both; 
-    height: 200px;
-    margin-top: 2500px;
-}
 
 /* Styles for screens up to 576px wide (mobile screens) */
 @media screen and (max-width: 465px) {
@@ -654,8 +782,29 @@ body {
     
 }
 
+/* FONTS */
+@font-face {
+    font-family: 'Formula1-Regular-1';
+    src: local('Formula1-Regular-1'), url('Fonts/Formula1-Regular-1.ttf') format('truetype');
+}
 
+@font-face {
+    font-family: 'Formula1-Regular-1-Bold';
+    src: local('Formula1-Regular-1-Bold'), url('Fonts/Formula1-Bold-4.ttf') format('truetype');
+}
 
+/* FOOTER */
+.footer {
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding-top: 20px; 
+    position: relative;
+    clear: both; 
+    height: 200px;
+    margin-top: 2500px;
+}
 
 .footer-text {
     margin: 0;
