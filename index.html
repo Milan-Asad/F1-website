@@ -9,10 +9,9 @@
     <script src="home.js" defer></script> <!-- Assuming home.js is in the same directory as your HTML file -->
 </head>
 <body>
-
+        
     
         <!-- RED BACKGROUND CONTAINER -->
-        
         <div id="countdownContainer" class="red-background">
             <!-- COUNTDOWN -->
             <div id="wrapper-countdown">
@@ -60,6 +59,7 @@
         <!-- 4 CARD NEWS ARTICLE -->
         <div class="wrapper-card">
         <div class="card-container">
+            
             <!-- Card 1 -->
             <div class="card" onclick="redirectToArticle('HTML-CSS/Articles/article-1.html')">
                 <img src="Images/F1-article-images/verstappen-abu-dhabi.png" alt="Verstappen Abu Dhabi" height="200" width="265">
@@ -95,20 +95,63 @@
         </div>
     </div>
 
+    <div class="more-news-wrapper">
+    <div class="more-news-box-1">
+        <p class="more-news">More News</p>
+    </div>
+    </div>
+
+    <!-- MORE NEWS SECTION -->
+    <div class="more-news-wrapper">
+        
+        <div class="more-news-box">
+
+        <!-- Sub Card 1 -->
+        <div class="more-news-article-card" onclick="redirectToArticle('HTML-CSS/Articles/article-1.html')">
+            <img src="Images/Sub-articles/ricciardo-rb-claim.avif" alt="Verstappen Abu Dhabi" height="200" width="265">
+            <div class="more-news-card-content">
+                <p class="more-news-card-topic">News</p> <!-- New element for the topic text -->
+                <h2 class="card-title">Ricciardo claims ‘rumours’ led to RB being tipped as dark horses ahead of 2024 pre-season testing</h2>
+            </div>
+        </div>
+
+        <!-- Sub Card 2 -->
+        <div class="more-news-article-card" onclick="redirectToArticle('HTML-CSS/Articles/article-1.html')">
+            <img src="Images/Sub-articles/sainz-ferrari-2025.avif" alt="Verstappen Abu Dhabi" height="200" width="265">
+            <div class="more-news-card-content">
+                <p class="more-news-card-topic">News</p> <!-- New element for the topic text -->
+                <h2 class="card-title">Sainz has plenty of choice for 2025 – but that could also bring a headache</h2>
+            </div>
+        </div>
+
+        <!-- Sub Card 2 -->
+        <div class="more-news-article-card" onclick="redirectToArticle('HTML-CSS/Articles/article-1.html')">
+            <img src="Images/Sub-articles/hamilton-2024-testing.avif" alt="Verstappen Abu Dhabi" height="200" width="265">
+            <div class="more-news-card-content">
+                <p class="more-news-card-topic">News</p> <!-- New element for the topic text -->
+                <h2 class="card-title">Hamilton says elements of Mercedes’ preparation ‘the best I’ve ever seen’ after 2024 testing</h2>
+            </div>
+        </div>
+
+        </div>
+        
+    </div>
+        
+
     <!-- TECHNICAL BOX -->
-    
     <div class="technical-box">
         <p class="technical-text">Technical</p>
     
-
+        <!-- Wrapper -->
         <div class="wrapper-technical">
+
         <!-- Main Technical Article -->
         <div class="technical-main-card" onclick="redirectToArticle('HTML-CSS/Articles/article-4.html')">
             <div class="card-image">
                 <img src="Images/Tech-article-analysis/red-bull-tech-analysis.avif" alt="Red Bull Tech Analysis">
             </div>
             <div class="card-content">
-                <p class="technical-card-topic">Technical</p>
+                <p class="technical-card-topic">TECHNICAL</p>
                 <h2 class="technical-card-title">TECH ANALYSIS: Why Red Bull’s aggressive RB20 is likely to have alarmed their F1 rivals</h2>
             </div>
         </div>
@@ -116,17 +159,17 @@
         <!-- Sub Technical Article -->
         <div class="technical-sub-article" onclick="redirectToArticle('HTML-CSS/Articles/article-5.html')">
             <div class="card-image">
-                <img src="Images/Tech-article-analysis/mercedes-tech-analysis.avif" alt="Red Bull Tech Analysis">
+                <img src="Images/Tech-article-analysis/mercedes-tech-analysis.avif" alt="Mercedes Tech Analysis">
             </div>
             <div class="card-content">
-                <p class="technical-sub-card-topic">Technical</p>
-                <h2 class="technical-card-title">TECH ANALYSIS: The major changes Mercedes have made with their W15 in a bid to catch Red Bull</h2>
+                <p class="technical-sub-card-topic">TECHNICAL</p>
+                <h2 class="technical-sub-card-title">TECH ANALYSIS: The major changes Mercedes have made with their W15 in a bid to catch Red Bull</h2>
             </div>
         </div>
     </div>
     </div>
     
-    
+
 
 
 

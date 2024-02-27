@@ -35,17 +35,27 @@ body {
     align-items: center; 
 }
 
-#wrapper-card {
+.wrapper-card {
     max-width: 1519px; /* Set maximum width */
     margin: 0 auto; /* Center the content horizontally */
-    display: flex;
-    align-items: center; 
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
+    justify-content: center; /* Center the items horizontally */
 }
 
 .wrapper-technical {
     max-width: 1519px; 
     margin: 0 auto;
     align-items: center; 
+}
+
+.more-news-wrapper {
+    max-width: 1519px;
+    margin: 0 auto;
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Align items with space around */
+    align-items: center; /* Center items vertically */
 }
 
 
@@ -139,7 +149,7 @@ body {
     cursor: pointer;
 }
 
-
+/* MAIN ARTICLE */
 .main-article-title {
     font-size: 32px;
     color: #333;
@@ -148,6 +158,7 @@ body {
     padding-left: 100px;
     padding-top: 100px;
     margin-top: 100px;
+    cursor: pointer;
 }
 
 .article-content:hover .main-article-title {
@@ -213,6 +224,7 @@ body {
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
     transform-origin: center center;
+    cursor: pointer;
 }
 
 /* MAIN ARTICLE HOVER EFFECT */
@@ -317,6 +329,7 @@ body {
 
 .card:hover {
     background-color: black;
+    cursor: pointer;
 }
 
 .card:hover .card-title {
@@ -329,9 +342,91 @@ body {
 }
 
 
+/* MORE NEWS SECTION */
+.more-news {
+    font-family: 'Formula1-Regular-1-Bold', sans-serif;
+    font-size: 28px;
+    display: inline-block; 
+    padding-right: 1100px;
+    text-align: left;
+    
+}
+
+.more-news-box {
+    display: flex; /* Use flexbox for the container */
+    justify-content: flex-start; /* Align items to the start (left) of the container */
+    margin-right: 440px; /* Add some left margin for spacing */
+}
+
+.more-news-article-card {
+    margin-left: 25px;
+    padding-top: 0;
+    padding-left: 0px;
+    border: 2px solid red;
+    border-radius: 5px;
+    overflow: hidden; 
+    width: 270px;
+    height: 300px;
+    
+}
+
+
+.more-news-article-card img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.more-news-article-card:hover {
+    background-color: black; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+}
+
+.more-news-article-card:hover .more-news-card-content h2 {
+    color: white; 
+    text-decoration: underline;
+    
+}
+
+.more-news-article-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s; 
+}
+
+.more-news-article-card:hover img {
+    transform: scale(1.07); 
+}
+
+
+.more-news-article-card .card-content {
+    padding: 0px;
+}
+
+.more-news-card-topic {
+    color: red;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+
+.more-news-article-card .card-title {
+    font-size: 14px; 
+    margin-top: 0; 
+    margin-bottom: 10px;
+    padding-top: 0px;
+    
+}
+
+
+
+
 /* TECHNICAL SECTION */
 .technical-box {
-    margin-top: 300px;
+    margin-top: 50px;
     padding-top: 30px;
     background-color: rgb(31, 28, 28);
     height: 700px;
@@ -342,9 +437,9 @@ body {
     color: white;
     text-align: center;
     line-height: 100px; 
-    font-size: 40px;
+    font-size: 28px;
     margin: 0;
-    padding-right: 1100px;
+    padding-right: 1150px;
     margin-bottom: 400px;
 }
 
@@ -368,7 +463,7 @@ body {
 
 .technical-main-card {
     padding-left: 105px;
-    margin: -400px 50px 0px 00px;
+    margin: -400px 0px 0px 0px;
     width: 750px;
     height: 550px;
     position: relative;
@@ -376,6 +471,8 @@ body {
     border-radius: 10px;
     box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1); /* Initial shadow color */
     transition: box-shadow 0.1s ease; /* Add transition effect */
+
+    font-size: 13px;
 }
 
 .technical-main-card:hover {
@@ -428,21 +525,22 @@ body {
     text-decoration: underline; 
 }
 
-
+/*  */
 
 
 /* SUB ARTICLE */
 .technical-sub-article {
     margin-top: -550px;
     margin-left: 900px;
-    padding-left: 20px;
-    width: 550px;
+    padding-left: 0px;
+    width: 520px;
     height: 550px;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.1s ease;
+    font-size: 13px;
 }
 
 .technical-sub-article:hover {
@@ -468,21 +566,23 @@ body {
 .technical-sub-article .technical-sub-card-topic {
     color: red;
     padding-top: 0px;
-    padding-right: 660px;
+    padding-right: 670px;
     text-align: left;
+
 }
 
 .technical-sub-card-topic {
-    padding-left: 200px;
+    padding-left: 260px;
 }
 
-.technical-sub-article .technical-card-title {
+.technical-sub-card-title {
     color: white;
     text-decoration: none;
     transition: text-decoration 0.3s ease;
+    font-size: 18px;
 }
 
-.technical-sub-article:hover .technical-card-title {
+.technical-sub-article:hover .technical-sub-card-title {
     text-decoration: underline;
 }
 
