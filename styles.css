@@ -353,14 +353,14 @@ body {
 }
 
 .more-news-box {
-    display: flex; /* Use flexbox for the container */
-    justify-content: flex-start; /* Align items to the start (left) of the container */
-    margin-right: 440px; /* Add some left margin for spacing */
+    display: flex; 
+    justify-content: flex-start; 
+    margin-right: 440px;
 }
 
 .more-news::after {
     content: ''; /* Required for pseudo-elements */
-    position: absolute; /* Position the element absolutely */
+    position: absolute; 
     bottom: 0px; 
     left: 0;
     top: 35px;
