@@ -180,6 +180,7 @@ body {
     position: absolute;
     border: 10px solid red; 
     background-color: transparent;
+    pointer-events: none;
 }
 
 /* MIDDLE LINE */
@@ -217,8 +218,9 @@ body {
 
 
 .main-article img {
-    padding-left: 100px;
+    /* padding-left: 100px; */
     padding-top:-10px;
+    margin-left: 100px;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -456,8 +458,8 @@ body {
 }
 
 .technical-main-card {
-    padding-left: 105px;
-    margin: -400px 0px 0px 0px;
+    padding-left: 5px;
+    margin: -400px 0px 0px 100px;
     width: 750px;
     height: 550px;
     position: relative;
