@@ -1,11 +1,7 @@
 // countdown js
 
 // Set the target date and time (ensure it's in the future)
-const targetDate = new Date("2024-02-29T11:30:00").getTime();
-
-// const targetDate = new Date("2024-02-29T11:30:00").getTime();
-// const targetDate = new Date("2025-02-12T12:30:00").getTime(); TEST
-
+const targetDate = new Date("2024-03-01T16:00:00").getTime();
 
 // UPDATE COUNTDOWN EVERY SECOND
 const countdownTimer = setInterval(function() {
@@ -33,6 +29,7 @@ const countdownTimer = setInterval(function() {
         // Hide or remove the countdown elements or display a message
     }
 }, 1000); // Update every second
+
 
 // Function to update the arc path for seconds only
 

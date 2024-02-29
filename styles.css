@@ -584,6 +584,8 @@ body {
 
 /* MEDIA SCREEN STUFF */
 
+/* TABBED MODEX */
+
 /* Styles for screens up to 768px wide */
 @media screen and (max-width: 768px) {
     .top-bar {
@@ -734,7 +736,7 @@ body {
   }
 
 
-/* Styles for screens up to 576px wide (mobile screens) */
+/* 576px (MOBILE SCREENS) */
 @media screen and (max-width: 465px) {
     .top-bar {
         flex-direction: column;
@@ -873,6 +875,116 @@ body {
     }
     
 }
+
+/* LAPTOP */
+@media screen and (max-width: 1440px) {
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-right: 55px;
+        padding-top: 175px;
+        max-width: 600px;  
+    }
+
+    
+
+    .article-border {
+        margin-top: 360px;  /* 375 original */
+        margin-left: 740px;
+        width: 645px;
+        height: 11px;
+        background-color: red;
+    }
+
+}
+
+/* SCREEN SIZE TO TEST RESPONSIVENESS IS 1354 */
+
+/* Styles for screens between 1025px and 1440px wide (e.g., larger tablets and small laptops) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+    /* CARD STUFF */
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-right: 1.0%;
+        padding-top: 11.5%; 
+        max-width: 42%;
+        height: 97%;
+        
+    }
+
+    .card {
+        height: 50%; 
+    }
+
+    .article-border {
+        width: 45%; 
+    } 
+
+    .main-article::before {
+        height: calc(170% + 0px);
+    }
+
+    .card-topic{
+        padding-left:16%;
+    }
+    
+
+    /* TECHNICAL SECTION */
+    .technical-main-card {
+        padding-left: 3%;
+        margin: -400px 0px 0px 0px;
+        width: 50%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 1%;
+        box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1); /* Initial shadow color */
+        transition: box-shadow 0.1s ease; /* Add transition effect */
+        font-size: 11px;
+    }
+
+    .technical-sub-article {
+        margin-top: -36.6%;
+        margin-bottom: 0%;
+        margin-left: 55%;
+        padding-left: 0%;
+        width: 45%;
+        height: 100%;  /*550px*/
+        position: relative;
+        overflow: hidden;
+        border-radius: 1%;
+        box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.1s ease;
+        font-size: 11px;
+    }
+
+    .technical-card-topic{
+        padding-left: 10%;
+    }
+
+    .technical-sub-card-topic{
+        padding-left: 29.5%;
+        margin-top: 9%;
+    }
+
+    .technical-sub-card-title{
+        padding-top: 0%;
+
+    }
+}
+
+
+/* Styles for screens larger than 1440px wide (e.g., desktop screens) */
+@media screen and (min-width: 1441px) {
+    
+}
+
+
 
 /* FONTS */
 @font-face {
