@@ -1013,5 +1013,12 @@ body {
 }
 
 .footer-text {
+    font-family: 'Formula1-Regular-1-Bold', sans-serif;
     margin: 0;
+}
+
+.footer-logo {
+    padding-top: 2%;
+    height: 30px;
+    width: auto;
 }

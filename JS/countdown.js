@@ -1,7 +1,7 @@
 // countdown js
 
 // Set the target date and time (ensure it's in the future)
-const targetDate = new Date("2024-03-01T16:00:00").getTime();
+const targetDate = new Date("2024-03-02T15:00:00").getTime();
 
 // UPDATE COUNTDOWN EVERY SECOND
 const countdownTimer = setInterval(function() {
