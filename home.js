@@ -21,7 +21,7 @@
 
 
 // COUNTDOWN (TILL NEXT RACE)
-const targetDate = new Date("2024-03-02T15:00:00").getTime();
+const targetDate = new Date("2024-03-07T13:30:00").getTime();
 
 // Update the countdown every second
 const countdownTimer = setInterval(function() {
