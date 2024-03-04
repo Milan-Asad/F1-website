@@ -165,8 +165,6 @@ body {
     text-decoration: underline;
 }
 
-
-
 .main-article {
     width: 610px;
     height: 450px;
@@ -666,7 +664,7 @@ body {
 }
 
 /* Styles for screens between 769px and 1024px wide */
-@media screen and (min-width: 769px) and (max-width: 1296px) {
+/* @media screen and (min-width: 769px) and (max-width: 1296px) {
     .top-bar {
         flex-direction: column; 
         align-items: center; 
@@ -729,13 +727,13 @@ body {
     }
     
     
-}
+} */
 
-@media (min-width: 1670px) {
+/* @media (min-width: 1670px) {
     .wrapper {
       max-width: 5270px;
     }
-  }
+  } */
 
 
 /* 576px (MOBILE SCREENS) */
@@ -756,13 +754,13 @@ body {
         justify-content: center;
         margin-top: 10px;
         display: flex;
-        flex-direction: column; /* Display navigation links vertically */
+        flex-direction: column;
         padding: 0;
     }
 
     .nav-list li {
-        margin-right: 0; /* Remove margin between navigation links */
-        margin-bottom: 10px; /* Add some spacing between navigation links */
+        margin-right: 0; 
+        margin-bottom: 10px; 
     }
 
     .main-article-title {
@@ -782,7 +780,7 @@ body {
     .article-border,
     .main-article::before,
     .main-article::after {
-        display: none; /* Hide unnecessary elements */
+        display: none; 
     }
 
     .countdown {
@@ -794,23 +792,20 @@ body {
         justify-content: space-between;
         padding-right: 0px;
         padding-left: 20px;
-        padding-top: 460px; /* Adjust this value as needed */
+        padding-top: 460px; 
         max-width: 1950px; 
-        margin: 40px 10px;/* Adjust margin here */
+        margin: 40px 10px;
     }
     
     
     .card-container {
-        /* position: absolute; */
         top: 0;
         right: 0;
     }
     
     .card {
         width: calc(50% - 10px); 
-        /* margin-bottom: 20px; */
         background-color: #ffffff;
-        /* background-color: #f4f4f4; */
         border-radius: 10px;
         overflow: hidden;
         border: 2px solid red; 
@@ -846,7 +841,7 @@ body {
     
     .card a {
         color: black;
-        text-decoration: none; /* Optional: Remove underline */
+        text-decoration: none; 
     }
     
     .card img {
@@ -856,9 +851,7 @@ body {
         transition: transform 0.3s ease-in-out;
     }
     
-    
-    
-    /* CARD HOVER STUFF (ZOOM, BLACK, UNDERLINE) */
+        
     .card:hover img {
         transform: scale(1.05);
     }
@@ -879,7 +872,7 @@ body {
 }
 
 /* LAPTOP */
-@media screen and (max-width: 1440px) {
+/* @media screen and (max-width: 1440px) {
 
     .card-container {
         display: flex;
@@ -893,50 +886,323 @@ body {
     
 
     .article-border {
-        margin-top: 360px;  /* 375 original */
+        margin-top: 360px; 
         margin-left: 740px;
         width: 645px;
         height: 11px;
         background-color: red;
     }
 
-}
+} */
 
-/* SCREEN SIZE TO TEST RESPONSIVENESS IS 1354 */
 
-/* Styles for screens between 1025px and 1440px wide (e.g., larger tablets and small laptops) */
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+/* TABLET SCREEN */
 
-    /* CARD STUFF */
-    .card-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding-right: 1.0%;
-        padding-top: 11.5%; 
-        max-width: 42%;
-        height: 97%;
-        
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    
+    /* MAIN ARTICLE */
+    .main-article-title {
+    font-size: 26px;
+    color: #333;
+    max-width: 650px;
+    text-decoration: none; /* Initially no underline */
+    padding-left: 100px;
+    padding-top: 50px;
+    margin-top: 100px;
+    cursor: pointer;
     }
 
+    .main-article {
+    width: 600px;
+    height: fit-content;
+    position: relative;
+    margin-left: -300px;
+    }
+    
+    /* BOTTOM RIGHT BORDER */
+    .article-border {
+        margin-top: 360px;  /* 375 original */
+        margin-left: 740px;
+        width: 690px;
+        height: 11px;
+        background-color: red;
+    }
+   
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+    }
+
+
+    .card-container{
+        margin-top: -180px;
+    }
+
+    .card{
+
+        margin-bottom: 5%;
+        margin-top: -2%;
+    }
+    
+    #wrapper, 
+    #wrapper-bar, 
+    #wrapper-countdown, 
+    #wrapper-logo,
+    .more-news-wrapper,
+    .technical-box {
+        width: 30%; /* Adjust width as needed */
+        max-width: none; /* Reset max-width */
+        margin: 0 auto; /* Center horizontally */
+    }
+
+
+
+    
+
+    .more-news::after {
+        content: ''; 
+        position: absolute; 
+        bottom: 0px; 
+        left: 0;
+        top: 35px;
+        margin-left: 650px;
+        width: 35%; 
+        height: 10px;
+        background-color: red; 
+    }
+
+    .more-news {
+        text-align: center; 
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 680px;
+        width: 200px; /* Ensure the text fits within the screen width */
+    }
+
+    .more-news-box{
+        width: fit-content;
+        padding-left: 0%;
+    }
+
+
+    .technical-box {
+        background-color: rgb(31, 28, 28);
+        width: 100%; /* Adjusted to fit the container */
+    }
+
+
+    .technical-box{
+        width: fit-content;
+        margin-top: 50px;
+        height: 1000px;
+    }
+    
+    .technical-text {
+        font-family: 'Formula1-Regular-1-Bold', sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 28px;
+        line-height: normal; /* Reset line-height */
+        margin: 0;
+        padding: 30px 0; /* Adjusted padding */
+    }
+    
+    .technical-main-card,
+    .technical-sub-article {
+        margin: 0;
+        padding-left: 0px;
+        width: 70%; /* Adjusted width */
+        height: auto; /* Adjusted height */
+        position: relative;
+        overflow: hidden;
+        border-radius: 0; /* Reset border-radius */
+        box-shadow: none; /* Reset box-shadow */
+        font-size: 16px; /* Adjusted font size */
+    }
+    
+    .technical-sub-article {
+        margin-left: auto; /* Adjusted margin */
+        margin-right: auto; /* Adjusted margin */
+    }
+    
+    .technical-card-topic,
+    .technical-sub-card-topic {
+        padding-left: 0; /* Reset padding */
+        text-align: center; /* Center align text */
+        margin-top: 0; /* Reset margin */
+    }
+    
+    .technical-sub-card-title {
+        padding-top: 15px; /* Adjusted padding */
+        padding-right: 0; /* Reset padding */
+    }
+    
+}
+
+
+/* SCREEN SIZE TO TEST RESPONSIVENESS IS 1354 */
+/* WORKING ON RIGHT NOW TODAY */
+/* Styles for screens between 1025px and 1440px wide (e.g., larger tablets and small laptops) */
+@media screen and (min-width: 1024px) and (max-width: 1125px) {
+    /* CARD STUFF */
+    .card-container {
+        margin-right: -5%;    
+        gap: 10px;
+        height: 90%;
+    
+    }
+
+
+    .card-container {
+        margin-right: -35%;
+        display: flex;
+        justify-content: flex-end; 
+    }
+    
     .card {
-        height: 50%; 
+        width: calc(45%); 
+        margin-bottom: 10px;
+        margin-left: 2%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 2px solid red; 
+        height: 59%;
+
+        
+    }
+    
+    
+    .card-content {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+    
+        
+    
+    }
+    
+    /* .card-topic {
+        color: red; 
+        font-size: 12px;
+        margin-bottom: 5px; 
+        text-align: left; 
+        padding-left: 28%;
+        padding-top: 5%;
+    } */
+    
+    
+    .card-title {
+        font-size: 13px;
+        margin-bottom: 20px;
+        padding-top: 0px;
+        text-align: left;
+        padding-left: 20px; 
+        padding-right: 20px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+    
+    
+    .card a {
+        color: rgb(0, 0, 0);
+        text-decoration: none; 
+    }
+    
+    .card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
     }
 
     .article-border {
         width: 45%; 
     } 
 
+
+    /* MAIN ARTICLE BORDER */
     .main-article::before {
         height: calc(170% + 0px);
     }
 
-    .card-topic{
-        padding-left:16%;
+
+
+    .article-border {
+        margin-top: 360px;  
+        margin-left: 740px;
+        width: 60%;
+        height: 11px;
+        background-color: red;
+    }
+
+    /* MORE NEWS SECTION */
+    .more-news {
+        font-family: 'Formula1-Regular-1-Bold', sans-serif;
+        font-size: 28px;
+        display: inline-block; 
+        padding-left: 5%;
+        width: 34.5%;
+        text-align: left;
+        position: relative; 
+        
+    }
+    
+    .more-news-box {
+        display: flex; 
+        justify-content: flex-start; 
+        margin-right: 22%;
+    }
+    
+    .more-news::after {
+        content: ''; /* Required for pseudo-elements */
+        position: absolute; 
+        bottom: 0px; 
+        left: 4%;
+        top: 105%;
+        width: 88%; 
+        height: 10px;
+        background-color: red; 
+    }
+    
+    .more-news-article-card {
+        margin-left: 25px;
+        padding-top: 0;
+        padding-left: 0px;
+        border: 2px solid red;
+        border-radius: 5px;
+        overflow: hidden; 
+        width: 270px;
+        height: 300px;
+        
     }
     
 
     /* TECHNICAL SECTION */
+    .technical-box {
+        padding-top: 30px;
+        background-color: rgb(31, 28, 28);
+        height: 700px;
+        width: 135%;
+    }
+    
+    .technical-text {
+        font-family: 'Formula1-Regular-1-Bold', sans-serif;
+        color: white;
+        text-align: center;
+        line-height: 100px; 
+        font-size: 28px;
+        margin: 0;
+        padding-right: 1150px;
+        margin-bottom: 400px;
+        
+    }
+
     .technical-main-card {
         padding-left: 3%;
         margin: -400px 0px 0px 0px;
@@ -953,9 +1219,10 @@ body {
     .technical-sub-article {
         margin-top: -36.6%;
         margin-bottom: 0%;
+        margin-right: 50px;
         margin-left: 55%;
         padding-left: 0%;
-        width: 45%;
+        width: 42%;
         height: 100%;  /*550px*/
         position: relative;
         overflow: hidden;
@@ -971,14 +1238,59 @@ body {
 
     .technical-sub-card-topic{
         padding-left: 29.5%;
-        margin-top: 9%;
+        margin-top: 12%;
     }
 
     .technical-sub-card-title{
-        padding-top: 0%;
+        padding-top: 1.5%;
+        padding-right: -4.5%;
 
     }
+
+
 }
+
+
+/* LAYOUT BETWEEN 1000 AND 1200 */
+/* @media screen and (min-width: 1000px) and (max-width: 1100px) {
+
+    .main-article-title {
+        text-align: left; 
+        padding-left: 20%; 
+        width: 900px;
+        font-size: 36px;
+
+    }
+
+    .main-article {
+        width: 90%;
+        height: 0%;
+        padding-left: 10%;
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        max-width: 90%; 
+        margin-left: 30%; 
+        margin-bottom: 20px; 
+        margin-top: -25%;
+    }
+    
+    .card {
+        width: calc((50%  10px) - 5%);
+        margin-bottom: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 2px solid red; 
+    }
+    
+} */
+
+
+
 
 
 /* Styles for screens larger than 1440px wide (e.g., desktop screens) */
