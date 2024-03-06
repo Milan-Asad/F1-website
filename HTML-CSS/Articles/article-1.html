@@ -4,78 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Initial Title</title>
-    <link rel="stylesheet" href="article-1.css"> <!-- Link to the main CSS file -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="article-1.css">
+    <!-- Google Fonts - Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-ZT2P9jRxUzDCa3n7UVM5q4bWZS2/uUVtGJpQTxag87O5d5ZY41k3AdKk14HptUdEZNb48e8Z3RrN/64z6EhzDQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="/JS/Articles/article-1.js" defer></script>
 </head>
 <body>
 
-    
     <!-- TOP BAR -->
-    <div class="top-bar">
-        <img src="/Images/F1logo.png" alt="F1 Logo" width="120" height="25" style="padding-top: 10px; padding-left: 45px; padding-bottom: 5px;">
-        <div id="wrapper-bar">
-        <ul class="nav-list">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/HTML-CSS/drivers.html">Drivers</a></li> <!-- Link to drivers.html -->
-            <li><a href="/HTML-CSS/teams.html">Teams</a></li>
-        </div>
+    <!-- TOP BAR -->
+<nav class="navbar navbar-expand-md navbar-light bg-danger py-0">
+    <a class="navbar-brand" href="#"><img src="/Images/F1logo.png" alt="F1 Logo" width="120" height="25"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto"> <!-- Remove ml-auto class -->
+            <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/HTML-CSS/drivers.html">Drivers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/HTML-CSS/teams.html">Teams</a>
+            </li>
         </ul>
     </div>
-    
+</nav>
 
+    
     <!-- WRAPPER -->
-    <div id="wrapper">
+    <div class="container">
+        
+        <!-- ARTICLE STUFF -->
 
-    <!-- ARTICLE STUFF -->
-
-    <!-- ARTICLE TITLE -->
-    <h1 class="article-1-title">Verstappen beats Leclerc to victory in Abu Dhabi to end record-breaking year on top</h1>
-
-    <a class="article-1-date">26 November 2023</a>
-
-    <!-- ARTICLE IMAGE -->
-    <div class="article-image" id="article-1-image">
-        <img src="/Images/F1-article-images/verstappen-abu-dhabi.png" alt="Verstappen Abu Dhabi">
-    </div>
-    
-    <!-- ARTICLE 1 DESCRIPTION -->
-    <p class="article-1-description">Max Verstappen confidently converted pole position into victory during Sunday evening’s season-ending Abu Dhabi Grand Prix, making it 19 wins across 22 races in what has been a remarkable year for the Dutchman and his Red Bull team.</p>
-
-
-    <!-- ARTICLE 1 TEXT -->
-    <div class="article-1-text">
-
-        <p>Verstappen defended from Charles Leclerc on the run to the first corner and across the first lap before cementing his lead and gradually pulling clear, taking the chequered flag comfortably ahead of the chasing pack as the sun set on the 2023 campaign.</p>
-    
-        <p>Sergio Perez crossed the line in second position for Red Bull, but a five-second time penalty for a clash with McLaren’s Lando Norris demoted him to fourth when the results were confirmed, leaving Leclerc second and the Mercedes of George Russell third.</p>
-    
-        <p>Leclerc had been second on the road until the closing laps when he elected to let Perez pass him and try to generate enough of a gap between the Red Bull and Russell to boost Ferrari’s chances of beating Mercedes to second in the constructors’ standings, but it was not to be.</p>
-    
-        <p>Norris had to settle for fifth after his run-in with Perez, the position he started thanks to his costly qualifying mistake, with team mate Oscar Piastri taking sixth from the Aston Martin of Fernando Alonso and AlphaTauri’s Yuki Tsunoda.</p>
-
-        <p>Lewis Hamilton and Lance Stroll made it double points finishes for their respective Mercedes and Aston Martin teams, with Daniel Ricciardo missing out by half a second in team boss Franz Tost’s final race overseeing the AlphaTauri squad.</p>
-
-        <p>Alpine pair Esteban Ocon and Pierre Gasly went unrewarded in the final race of the season, the latter having been involved in a brush of bodywork with Hamilton midway through proceedings, followed by the lead Williams of Alex Albon.</p>
-    
-        <p>Nico Hulkenberg could not convert his Q3 appearance into points for Haas, dropping all the way down to 15th position in another challenging race, with Williams rookie Logan Sargeant and the Alfa Romeo of Zhou Guanyu coming home 16th and 17th respectively.</p>
-    
-        <p>Carlos Sainz had been running in the points in the closing stages, but his alternative strategy required a late pit stop and left him a lowly 18th, as Valtteri Bottas and Kevin Magnussen completed the order for Alfa Romeo and Haas.</p>
-    
-        <p>After struggling through practice, Verstappen and Red Bull bounced back in qualifying to secure pole position for one final time in 2023, with Leclerc joining the reigning world champion on the front row, followed by Piastri, Russell, Norris and the high-flying Tsunoda.</p>
-    
-        <p>A couple of drivers out of their usual positions were Hamilton, who could only manage 11th in qualifying as he lamented what was wrong with his car, while Sainz would be starting all the way down in 16th as he struggled for form in the wake of a heavy crash in FP2.</p>
-    
-        <p>When the cars assembled on the grid and the tyre blankets came off, it was revealed that the majority of drivers would be starting on the medium compound, with Stroll, Sainz and Bottas the three drivers to try something different by taking the hard rubber.</p>
-    
-        <p>As the lights went out, Leclerc got away well to briefly look up the inside of Verstappen on the run to Turn 1, but the pole-sitter braked slightly later to swoop across the track and hold position, as Piastri maintained third and Norris muscled his way past Russell at the second corner.</p>
-    
-        <p>Leclerc latched onto Verstappen’s car exiting Turn 5 and had another sniff at the lead into the Turn 6/7 chicane, with the Ferrari and Red Bull going side-by-side under braking, only for the Dutchman to retain the lead once more and set about putting some distance between the two cars.</p>
-
-    </div>
-    
+        <!-- ARTICLE TITLE -->
+        <div class="row">
+            <div class="col">
+                <h1 class="article-1-title display-4 display-md-6 display-lg-8">Verstappen beats Leclerc to victory in Abu Dhabi to end record-breaking year on top</h1>
+                <p class="article-1-date small">26 November 2023</p>
+            </div>
+        </div>
+        
+        <!-- ARTICLE IMAGE -->
+        <div class="row justify-content-center"> <!-- Center the image horizontally -->
+            <div class="col-md-8"> <!-- Adjust the column size according to your layout -->
+                <img src="/Images/F1-article-images/verstappen-abu-dhabi.png" alt="Verstappen Abu Dhabi" class="img-fluid img-thumbnail article-image" style="width: 650px; height: auto;">
+            </div>
+        </div>
+        
+        <!-- ARTICLE 1 DESCRIPTION -->
+        <div class="row">
+            <div class="col-md-8 pl-0"> <!-- Adjust column size for responsiveness and remove left padding -->
+                <p class="article-1-description">Max Verstappen confidently converted pole position into victory during Sunday evening’s season-ending Abu Dhabi Grand Prix, making it 19 wins across 22 races in what has been a remarkable year for the Dutchman and his Red Bull team.</p>
+            </div>
+        </div>
+        
+        <!-- ARTICLE 1 TEXT -->
+        <div class="row">
+            <div class="col">
+                <div class="article-1-text">
+                    <p class="article-paragraph">Verstappen defended from Charles Leclerc on the run to the first corner and across the first lap before cementing his lead and gradually pulling clear, taking the chequered flag comfortably ahead of the chasing pack as the sun set on the 2023 campaign.</p>
+                    <p class="article-paragraph">Sergio Perez crossed the line in second position for Red Bull, but a five-second time penalty for a clash with McLaren’s Lando Norris demoted him to fourth when the results were confirmed, leaving Leclerc second and the Mercedes of George Russell third.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!-- Bootstrap JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 </html>
