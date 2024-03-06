@@ -206,6 +206,40 @@
         .article-1-title{
             padding-right: 70px;
         }
+
+
+        .navbar-collapse {
+            padding-top: 50px;
+            position: fixed; /* Fixed position to overlap the screen */
+            top: 0; /* Position it at the top of the viewport */
+            left: 0; /* Position it at the left of the viewport */
+            width: 100%; /* Full width */
+            height: 29%; /* Full height */
+            background-color: red; /* Red background color */
+            z-index: 1000; /* Ensure it appears above other content */
+            overflow-y: auto; /* Enable scrolling if the menu content exceeds the viewport height */
+        }
+        
+        /* Close button (X) style */
+        .navbar-toggler {
+            position: absolute; /* Position it relative to the navbar */
+            top: 10px; /* Adjust as needed */
+            right: 10px; /* Adjust as needed */
+            z-index: 1100; /* Ensure it appears above the menu */
+        }
+        
+        /* Hamburger icon style */
+        .navbar-toggler-icon {
+            background-color: transparent; /* Set the background color to transparent */
+            border-color: transparent; /* Set the border color to transparent */
+            color: white; /* Set the color of the lines to white */
+        }
+
+        .navbar-toggler:focus {
+            outline: none; /* Remove the outline when the toggle button is focused */
+        }
+        
+        
     }
 
 
