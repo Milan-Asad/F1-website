@@ -19,7 +19,7 @@
 
     <!-- TOP BAR -->
     <!-- TOP BAR -->
-<nav class="navbar navbar-expand-md navbar-light bg-danger py-0">
+    <nav class="navbar navbar-expand-md navbar-light bg-danger py-0">
     <a class="navbar-brand" href="#"><img src="/Images/F1logo.png" alt="F1 Logo" width="120" height="25"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,36 +47,36 @@
         <!-- ARTICLE STUFF -->
 
         <!-- ARTICLE TITLE -->
-        <div class="row">
-            <div class="col">
-                <h1 class="article-1-title display-4 display-md-6 display-lg-8">Verstappen beats Leclerc to victory in Abu Dhabi to end record-breaking year on top</h1>
-                <p class="article-1-date small">26 November 2023</p>
-            </div>
+        <!-- ARTICLE TITLE AND DATE CONTAINER -->
+        <div class="title-date-container">
+            <h1 class="article-1-title display-4 display-md-6 display-lg-8">Verstappen beats Leclerc to victory in Abu Dhabi to end record-breaking year on top</h1>
+            <p class="article-1-date small">26 November 2023</p>
         </div>
+
         
         <!-- ARTICLE IMAGE -->
         <div class="row justify-content-center"> <!-- Center the image horizontally -->
-            <div class="col-md-8"> <!-- Adjust the column size according to your layout -->
+            <div class="col-md-8">
                 <img src="/Images/F1-article-images/verstappen-abu-dhabi.png" alt="Verstappen Abu Dhabi" class="img-fluid img-thumbnail article-image" style="width: 650px; height: auto;">
             </div>
         </div>
         
         <!-- ARTICLE 1 DESCRIPTION -->
         <div class="row">
-            <div class="col-md-8 pl-0"> <!-- Adjust column size for responsiveness and remove left padding -->
-                <p class="article-1-description">Max Verstappen confidently converted pole position into victory during Sunday evening’s season-ending Abu Dhabi Grand Prix, making it 19 wins across 22 races in what has been a remarkable year for the Dutchman and his Red Bull team.</p>
-            </div>
-        </div>
-        
-        <!-- ARTICLE 1 TEXT -->
-        <div class="row">
-            <div class="col">
-                <div class="article-1-text">
-                    <p class="article-paragraph">Verstappen defended from Charles Leclerc on the run to the first corner and across the first lap before cementing his lead and gradually pulling clear, taking the chequered flag comfortably ahead of the chasing pack as the sun set on the 2023 campaign.</p>
-                    <p class="article-paragraph">Sergio Perez crossed the line in second position for Red Bull, but a five-second time penalty for a clash with McLaren’s Lando Norris demoted him to fourth when the results were confirmed, leaving Leclerc second and the Mercedes of George Russell third.</p>
+            <div class="col-md-8"> <!-- Adjust column size for responsiveness and remove left padding -->
+                <!-- ARTICLE 1 DESCRIPTION -->
+                <div class="article-content-container">
+                    <p class="article-1-description pl-3">Max Verstappen confidently converted pole position into victory during Sunday evening’s season-ending Abu Dhabi Grand Prix, making it 19 wins across 22 races in what has been a remarkable year for the Dutchman and his Red Bull team.</p>
+                    <!-- ARTICLE 1 TEXT -->
+                    <div class="article-1-text pl-3">
+                        <p class="article-paragraph">Verstappen defended from Charles Leclerc on the run to the first corner and across the first lap before cementing his lead and gradually pulling clear, taking the chequered flag comfortably ahead of the chasing pack as the sun set on the 2023 campaign.</p>
+                        <p class="article-paragraph">Sergio Perez crossed the line in second position for Red Bull, but a five-second time penalty for a clash with McLaren’s Lando Norris demoted him to fourth when the results were confirmed, leaving Leclerc second and the Mercedes of George Russell third.</p>
+                    </div>
                 </div>
             </div>
         </div>
+        
+        
     </div>
 
     <!-- Bootstrap JavaScript dependencies -->
