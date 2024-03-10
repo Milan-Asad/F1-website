@@ -169,16 +169,14 @@
     }
     
 
+    /* **********MEDIA SCREENS**********  */
 
-
-    
-    
-
+    /* TABLET + REGULAR LAPTOP */
     @media (min-width: 768px) and (max-width: 1023px) {
         .article-image {
-            max-width: 100%; /* Set maximum width to 55% of its container */
-            height: auto; /* Maintain aspect ratio */
-            margin-left: -100px; /* Shift the image to the left by 200 pixels */
+            max-width: 100%; 
+            height: auto; 
+            margin-left: -100px; /
         }
 
         .article-content-container {
