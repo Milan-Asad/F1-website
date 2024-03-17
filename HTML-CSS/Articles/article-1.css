@@ -260,19 +260,19 @@
         .navbar-toggler {
             position: absolute; 
             top: 10px; 
-            right: 10px; /* Adjust as needed */
-            z-index: 1100; /* Ensure it appears above the menu */
+            right: 10px; 
+            z-index: 1100; 
         }
         
         /* Hamburger icon style */
         .navbar-toggler-icon {
-            background-color: transparent; /* Set the background color to transparent */
-            border-color: transparent; /* Set the border color to transparent */
-            color: white; /* Set the color of the lines to white */
+            background-color: transparent; 
+            border-color: transparent; 
+            color: white; 
         }
 
         .navbar-toggler:focus {
-            outline: none; /* Remove the outline when the toggle button is focused */
+            outline: none; 
         }
         
         
